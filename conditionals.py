@@ -33,11 +33,11 @@ while user_guess != random_number:
     user_guess = input("Guess a number between 1 and " + str(upper_bound) + ": ")
 
 # check if guess is a digit
-invalid_user_guess = True
-while invalid_user_guess:
-    if user_guess.isdigit():
-        user_guess = int(user_guess)
-        invalid_user_guess = False
+    invalid_user_guess = True
+    while invalid_user_guess:
+        if user_guess.isdigit():
+            user_guess = int(user_guess)
+            invalid_user_guess = False
 
     
 
@@ -51,7 +51,7 @@ while invalid_user_guess:
         print("You lose. Try again.")
         number_of_guesses += 1
 
-print("Game Over. You took " + str(number_of_guesses) + "guesses.")
+print("Game Over. You took " + str(number_of_guesses) + " guesses.")
 
 
 
