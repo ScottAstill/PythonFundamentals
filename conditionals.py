@@ -30,11 +30,10 @@ while user_guess != random_number:
 
 
 # ask the user to guess
-    user_guess = input("Guess a number between 1 and " + str(upper_bound) + ": ")
-
 # check if guess is a digit
     invalid_user_guess = True
     while invalid_user_guess:
+        user_guess = input("Guess a number between 1 and " + str(upper_bound) + ": ")
         if user_guess.isdigit():
             user_guess = int(user_guess)
             invalid_user_guess = False
